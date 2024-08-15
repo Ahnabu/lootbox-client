@@ -1,0 +1,452 @@
+[
+    {
+        "productName": "Wireless Earbuds",
+        "productImage": "https://i.ibb.co/8M6mkzK/image.png",
+        "description": "High-quality wireless earbuds with noise cancellation.",
+        "price": 59.99,
+        "category": "Electronics",
+        "brandName": "SoundMagic",
+        "ratings": 4.5,
+        "createdAt": "2024-08-01T10:00:00Z"
+    },
+    {
+        "productName": "Smartphone",
+        "productImage": "https://i.ibb.co/r4Tgj1D/image.png",
+        "description": "Latest model smartphone with high-resolution camera.",
+        "price": 699.99,
+        "category": "Electronics",
+        "brandName": "TechPro",
+        "ratings": 4.8,
+        "createdAt": "2024-08-02T11:30:00Z"
+    },
+    {
+        "productName": "Running Shoes",
+        "productImage": "https://i.ibb.co/xHKsT07/image.png",
+        "description": "Lightweight running shoes designed for comfort and performance.",
+        "price": 89.99,
+        "category": "Fashion",
+        "brandName": "FitFeet",
+        "ratings": 4.2,
+        "createdAt": "2024-08-03T09:15:00Z"
+    },
+    {
+        "productName": "Gaming Laptop",
+        "productImage": "https://i.ibb.co/MnJ9B9K/image.png",
+        "description": "Powerful gaming laptop with advanced graphics.",
+        "price": 1199.99,
+        "category": "Electronics",
+        "brandName": "GameOn",
+        "ratings": 4.7,
+        "createdAt": "2024-08-04T14:45:00Z"
+    },
+    {
+        "productName": "Coffee Maker",
+        "productImage": "https://i.ibb.co/6RDmw1Q/image.png",
+        "description": "Programmable coffee maker with a built-in grinder.",
+        "price": 129.99,
+        "category": "Home Appliances",
+        "brandName": "BrewMaster",
+        "ratings": 4.3,
+        "createdAt": "2024-08-05T08:00:00Z"
+    },
+    {
+        "productName": "LED TV",
+        "productImage": "https://i.ibb.co/ssVHHg7/image.png",
+        "description": "50-inch 4K Ultra HD LED TV with smart features.",
+        "price": 499.99,
+        "category": "Electronics",
+        "brandName": "VisionMax",
+        "ratings": 4.6,
+        "createdAt": "2024-08-06T13:20:00Z"
+    },
+    {
+        "productName": "Blender",
+        "productImage": "https://i.ibb.co/w0L9jhk/image.png",
+        "description": "High-speed blender for smoothies and shakes.",
+        "price": 39.99,
+        "category": "Home Appliances",
+        "brandName": "BlendIt",
+        "ratings": 4.0,
+        "createdAt": "2024-08-07T15:10:00Z"
+    },
+    {
+        "productName": "Yoga Mat",
+        "productImage": "https://i.ibb.co/M28FPb6/image.png",
+        "description": "Eco-friendly non-slip yoga mat for all types of workouts.",
+        "price": 29.99,
+        "category": "Fitness",
+        "brandName": "ZenFlex",
+        "ratings": 4.4,
+        "createdAt": "2024-08-08T12:05:00Z"
+    },
+    {
+        "productName": "Desk Chair",
+        "productImage": "https://i.ibb.co/WHCtxrN/image.png",
+        "description": "Ergonomic desk chair with lumbar support.",
+        "price": 149.99,
+        "category": "Furniture",
+        "brandName": "ErgoComfort",
+        "ratings": 4.2,
+        "createdAt": "2024-08-09T10:45:00Z"
+    },
+    {
+        "productName": "Bluetooth Speaker",
+        "productImage": "https://i.ibb.co/fYpdGmC/image.png",
+        "description": "Portable Bluetooth speaker with deep bass.",
+        "price": 49.99,
+        "category": "Electronics",
+        "brandName": "BassBoom",
+        "ratings": 4.3,
+        "createdAt": "2024-08-10T09:30:00Z"
+    },
+    {
+        "productName": "Wristwatch",
+        "productImage": "https://i.ibb.co/wgNBX9p/image.png",
+        "description": "Stylish wristwatch with a leather strap.",
+        "price": 199.99,
+        "category": "Fashion",
+        "brandName": "Timeless",
+        "ratings": 4.7,
+        "createdAt": "2024-08-11T16:20:00Z"
+    },
+    {
+        "productName": "Electric Kettle",
+        "productImage": "https://i.ibb.co/D1XwNsx/image.png",
+        "description": "Fast-boiling electric kettle with auto shut-off.",
+        "price": 24.99,
+        "category": "Home Appliances",
+        "brandName": "QuickBoil",
+        "ratings": 4.1,
+        "createdAt": "2024-08-12T08:40:00Z"
+    },
+    {
+        "productName": "Sunglasses",
+        "productImage": "https://i.ibb.co/fF2TzKB/image.png",
+        "description": "Polarized sunglasses with UV protection.",
+        "price": 79.99,
+        "category": "Fashion",
+        "brandName": "SunGuard",
+        "ratings": 4.6,
+        "createdAt": "2024-08-13T11:50:00Z"
+    },
+    {
+        "productName": "Fitness Tracker",
+        "productImage": "https://i.ibb.co/5FkM8z8/image.png",
+        "description": "Waterproof fitness tracker with heart rate monitor.",
+        "price": 99.99,
+        "category": "Fitness",
+        "brandName": "TrackPro",
+        "ratings": 4.4,
+        "createdAt": "2024-08-14T14:00:00Z"
+    },
+    {
+        "productName": "Laptop Stand",
+        "productImage": "https://i.ibb.co/MnJ9B9K/image.png",
+        "description": "Adjustable aluminum laptop stand.",
+        "price": 39.99,
+        "category": "Accessories",
+        "brandName": "StandPerfect",
+        "ratings": 4.5,
+        "createdAt": "2024-08-15T11:00:00Z"
+    },
+    {
+        "productName": "Wireless Mouse",
+        "productImage": "https://i.ibb.co/8M6mkzK/image.png",
+        "description": "Ergonomic wireless mouse with fast response time.",
+        "price": 24.99,
+        "category": "Accessories",
+        "brandName": "ClickEase",
+        "ratings": 4.3,
+        "createdAt": "2024-08-16T09:00:00Z"
+    },
+    {
+        "productName": "Smart Watch",
+        "productImage": "https://i.ibb.co/wgNBX9p/image.png",
+        "description": "Smart watch with multiple fitness tracking features.",
+        "price": 149.99,
+        "category": "Electronics",
+        "brandName": "WristTech",
+        "ratings": 4.7,
+        "createdAt": "2024-08-17T12:00:00Z"
+    },
+    {
+        "productName": "Noise Cancelling Headphones",
+        "productImage": "https://i.ibb.co/8M6mkzK/image.png",
+        "description": "Over-ear headphones with active noise cancellation.",
+        "price": 199.99,
+        "category": "Electronics",
+        "brandName": "QuietSound",
+        "ratings": 4.8,
+        "createdAt": "2024-08-18T14:00:00Z"
+    },
+    {
+        "productName": "Portable Charger",
+        "productImage": "https://i.ibb.co/r4Tgj1D/image.png",
+        "description": "High-capacity portable charger for multiple devices.",
+        "price": 29.99,
+        "category": "Accessories",
+        "brandName": "PowerBank",
+        "ratings": 4.6,
+        "createdAt": "2024-08-19T16:00:00Z"
+    },
+    {
+        "productName": "Smart Thermostat",
+        "productImage": "https://i.ibb.co/ssVHHg7/image.png",
+        "description": "Energy-saving smart thermostat with mobile app control.",
+        "price": 199.99,
+        "category": "Home Appliances",
+        "brandName": "EcoTemp",
+        "ratings": 4.7,
+        "createdAt": "2024-08-20T18:00:00Z"
+    },
+    {
+        "productName": "Electric Toothbrush",
+        "productImage": "https://i.ibb.co/6RDmw1Q/image.png",
+        "description": "Rechargeable electric toothbrush with multiple modes.",
+        "price": 49.99,
+        "category": "Personal Care",
+        "brandName": "CleanSmile",
+        "ratings": 4.5,
+        "createdAt": "2024-08-21T10:00:00Z"
+    },
+    {
+        "productName": "Air Fryer",
+        "productImage": "https://i.ibb.co/w0L9jhk/image.png",
+        "description": "Healthy cooking air fryer with multiple presets.",
+        "price": 99.99,
+        "category": "Home Appliances",
+        "brandName": "CrispyCook",
+        "ratings": 4.6,
+        "createdAt": "2024-08-22T12:00:00Z"
+    },
+    {
+        "productName": "Electric Shaver",
+        "productImage": "https://i.ibb.co/D1XwNsx/image.png",
+        "description": "Waterproof electric shaver with precision blades.",
+        "price": 89.99,
+        "category": "Personal Care",
+        "brandName": "SmoothShave",
+        "ratings": 4.4,
+        "createdAt": "2024-08-23T14:00:00Z"
+    },
+    {
+        "productName": "Espresso Machine",
+        "productImage": "https://i.ibb.co/6RDmw1Q/image.png",
+        "description": "Professional-grade espresso machine with milk frother.",
+        "price": 299.99,
+        "category": "Home Appliances",
+        "brandName": "BrewMaster",
+        "ratings": 4.8,
+        "createdAt": "2024-08-24T16:00:00Z"
+    },
+    {
+        "productName": "Vacuum Cleaner",
+        "productImage": "https://i.ibb.co/ssVHHg7/image.png",
+        "description": "Lightweight vacuum cleaner with powerful suction.",
+        "price": 199.99,
+        "category": "Home Appliances",
+        "brandName": "DustBuster",
+        "ratings": 4.7,
+        "createdAt": "2024-08-25T18:00:00Z"
+    },
+    {
+        "productName": "Robot Vacuum",
+        "productImage": "https://i.ibb.co/ssVHHg7/image.png",
+        "description": "Smart robot vacuum with Wi-Fi connectivity.",
+        "price": 249.99,
+        "category": "Home Appliances",
+        "brandName": "RoboClean",
+        "ratings": 4.6,
+        "createdAt": "2024-08-26T10:00:00Z"
+    },
+    {
+        "productName": "Wireless Charger",
+        "productImage": "https://i.ibb.co/r4Tgj1D/image.png",
+        "description": "Fast wireless charger for all Qi-enabled devices.",
+        "price": 39.99,
+        "category": "Accessories",
+        "brandName": "ChargeFast",
+        "ratings": 4.5,
+        "createdAt": "2024-08-27T12:00:00Z"
+    },
+    {
+        "productName": "4K Action Camera",
+        "productImage": "https://i.ibb.co/xHKsT07/image.png",
+        "description": "Rugged action camera with 4K recording capabilities.",
+        "price": 149.99,
+        "category": "Electronics",
+        "brandName": "AdventureCam",
+        "ratings": 4.6,
+        "createdAt": "2024-08-28T14:00:00Z"
+    },
+    {
+        "productName": "Waterproof Speaker",
+        "productImage": "https://i.ibb.co/fYpdGmC/image.png",
+        "description": "Portable waterproof Bluetooth speaker for outdoor use.",
+        "price": 79.99,
+        "category": "Electronics",
+        "brandName": "AquaSound",
+        "ratings": 4.5,
+        "createdAt": "2024-08-29T16:00:00Z"
+    },
+    {
+        "productName": "Portable Projector",
+        "productImage": "https://i.ibb.co/MnJ9B9K/image.png",
+        "description": "Compact portable projector with HD resolution.",
+        "price": 229.99,
+        "category": "Electronics",
+        "brandName": "ProjectorMax",
+        "ratings": 4.7,
+        "createdAt": "2024-08-30T18:00:00Z"
+    },
+    {
+        "productName": "Smart Lock",
+        "productImage": "https://i.ibb.co/ssVHHg7/image.png",
+        "description": "Smart lock with keyless entry and smartphone control.",
+        "price": 149.99,
+        "category": "Home Security",
+        "brandName": "SecureEntry",
+        "ratings": 4.6,
+        "createdAt": "2024-08-31T10:00:00Z"
+    },
+    {
+        "productName": "Gaming Keyboard",
+        "productImage": "https://i.ibb.co/MnJ9B9K/image.png",
+        "description": "RGB mechanical gaming keyboard with customizable keys.",
+        "price": 129.99,
+        "category": "Accessories",
+        "brandName": "KeyPro",
+        "ratings": 4.7,
+        "createdAt": "2024-09-01T12:00:00Z"
+    },
+    {
+        "productName": "Smart Light Bulbs",
+        "productImage": "https://i.ibb.co/ssVHHg7/image.png",
+        "description": "Set of smart light bulbs with voice control.",
+        "price": 69.99,
+        "category": "Home Appliances",
+        "brandName": "BrightHome",
+        "ratings": 4.6,
+        "createdAt": "2024-09-02T14:00:00Z"
+    },
+    {
+        "productName": "Digital Camera",
+        "productImage": "https://i.ibb.co/r4Tgj1D/image.png",
+        "description": "High-resolution digital camera with optical zoom.",
+        "price": 499.99,
+        "category": "Electronics",
+        "brandName": "SnapShot",
+        "ratings": 4.8,
+        "createdAt": "2024-09-03T16:00:00Z"
+    },
+    {
+        "productName": "Wireless Earbuds Pro",
+        "productImage": "https://i.ibb.co/8M6mkzK/image.png",
+        "description": "Advanced wireless earbuds with premium sound quality.",
+        "price": 149.99,
+        "category": "Electronics",
+        "brandName": "SoundMagic",
+        "ratings": 4.9,
+        "createdAt": "2024-09-04T18:00:00Z"
+    },
+    {
+        "productName": "Gaming Headset",
+        "productImage": "https://i.ibb.co/8M6mkzK/image.png",
+        "description": "Surround sound gaming headset with noise-canceling microphone.",
+        "price": 79.99,
+        "category": "Electronics",
+        "brandName": "SoundWave",
+        "ratings": 4.7,
+        "createdAt": "2024-09-05T10:00:00Z"
+    },
+    {
+        "productName": "Electric Scooter",
+        "productImage": "https://i.ibb.co/xHKsT07/image.png",
+        "description": "Foldable electric scooter with long battery life.",
+        "price": 299.99,
+        "category": "Transport",
+        "brandName": "EcoRide",
+        "ratings": 4.6,
+        "createdAt": "2024-09-06T12:00:00Z"
+    },
+    {
+        "productName": "Smart Home Hub",
+        "productImage": "https://i.ibb.co/ssVHHg7/image.png",
+        "description": "Central hub for controlling all smart home devices.",
+        "price": 129.99,
+        "category": "Home Appliances",
+        "brandName": "HomeConnect",
+        "ratings": 4.5,
+        "createdAt": "2024-09-07T14:00:00Z"
+    },
+    {
+        "productName": "Electric Bike",
+        "productImage": "https://i.ibb.co/MnJ9B9K/image.png",
+        "description": "Eco-friendly electric bike with a powerful motor.",
+        "price": 1199.99,
+        "category": "Transport",
+        "brandName": "EcoWheel",
+        "ratings": 4.8,
+        "createdAt": "2024-09-08T16:00:00Z"
+    },
+    {
+        "productName": "Home Security Camera",
+        "productImage": "https://i.ibb.co/r4Tgj1D/image.png",
+        "description": "1080p HD security camera with night vision.",
+        "price": 99.99,
+        "category": "Home Security",
+        "brandName": "SecureView",
+        "ratings": 4.7,
+        "createdAt": "2024-09-09T18:00:00Z"
+    },
+    {
+        "productName": "Standing Desk",
+        "productImage": "https://i.ibb.co/WHCtxrN/image.png",
+        "description": "Adjustable height standing desk with spacious surface.",
+        "price": 399.99,
+        "category": "Furniture",
+        "brandName": "WorkComfort",
+        "ratings": 4.6,
+        "createdAt": "2024-09-10T10:00:00Z"
+    },
+    {
+        "productName": "Smart Mirror",
+        "productImage": "https://i.ibb.co/6RDmw1Q/image.png",
+        "description": "Interactive smart mirror with voice control.",
+        "price": 249.99,
+        "category": "Home Appliances",
+        "brandName": "ReflectiveTech",
+        "ratings": 4.5,
+        "createdAt": "2024-09-11T12:00:00Z"
+    },
+    {
+        "productName": "Drone with Camera",
+        "productImage": "https://i.ibb.co/xHKsT07/image.png",
+        "description": "4K camera drone with GPS and return-to-home feature.",
+        "price": 499.99,
+        "category": "Electronics",
+        "brandName": "SkyView",
+        "ratings": 4.7,
+        "createdAt": "2024-09-12T14:00:00Z"
+    },
+    {
+        "productName": "Portable Air Conditioner",
+        "productImage": "https://i.ibb.co/ssVHHg7/image.png",
+        "description": "Portable air conditioner with remote control.",
+        "price": 299.99,
+        "category": "Home Appliances",
+        "brandName": "CoolBreeze",
+        "ratings": 4.4,
+        "createdAt": "2024-09-13T16:00:00Z"
+    },
+    {
+        "productName": "VR Headset",
+        "productImage": "https://i.ibb.co/MnJ9B9K/image.png",
+        "description": "Virtual reality headset with immersive experience.",
+        "price": 399.99,
+        "category": "Electronics",
+        "brandName": "VisionVR",
+        "ratings": 4.8,
+        "createdAt": "2024-09-14T18:00:00Z"
+    }
+]
