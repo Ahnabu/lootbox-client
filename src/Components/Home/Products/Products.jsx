@@ -49,7 +49,8 @@ const Products = () => {
                     minPrice: minPrice || undefined,
                     maxPrice: maxPrice || undefined,
                     brand: brand,
-                    category: category
+                    category: category,
+                    currentPage:currentPage
                 }
             })
                
