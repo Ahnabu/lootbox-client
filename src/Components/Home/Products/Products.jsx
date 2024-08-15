@@ -21,16 +21,16 @@ const Products = () => {
             delay: 1,
             duration: 1.5,
             y: 0
-            
+
         })
         gsap.to('#text', {
             opacity: 1,
             delay: 1.5,
             duration: 1.5,
             y: 0
-            
+
         })
-        
+
     }, [])
     const [filter, setFilter] = useState('')
     const [brand, setBrand] = useState('')
@@ -44,30 +44,30 @@ const Products = () => {
     const { data: cards = [], refetch } = useQuery({
         queryKey: ['cards'],
         queryFn: async () => {
-            const res = await axios.get(`http://localhost:5000/data?filter=${filter}&sort=${sort}&order=${sortOrder}`, {
+            const res = await axios.get(`https://lootbox-server.vercel.app/data?filter=${filter}&sort=${sort}&order=${sortOrder}`, {
                 params: {
                     minPrice: minPrice || undefined,
                     maxPrice: maxPrice || undefined,
                     brand: brand,
                     category: category,
-                    currentPage:currentPage
+                    currentPage: currentPage
                 }
             })
-               
+
             return res.data;
         },
         cacheTime: 0, // Disabling cache for 'cards' query
     });
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/data-count`)
+        axios.get(`https://lootbox-server.vercel.app/data-count`)
             .then(data => {
                 setCount(data.data.count)
             }).catch(error => console.log(error))
     }, [currentPage])
-    const numbersOfPage = Math.ceil(count /10)
+    const numbersOfPage = Math.ceil(count / 9)
     //   Fetch participants Data
-   
+
     const pages = [...Array(numbersOfPage).keys()]
 
 
@@ -108,15 +108,15 @@ const Products = () => {
     const handleMinMax = () => {
         refetch()
     }
-    
+
     return (
         <div className="text-center ">
             <h2 id="title" className="text-4xl mx-auto opacity-0 translate-y-2 transition-all text-black pt-20 md:pt-24">LootBox</h2>
             <p id="text" className="text-xl mx-auto opacity-0 translate-y-2 transition-all text-black pt-3 "> Discover a curated collection of top-quality products, all in one place. LootBox brings you the best deals, trusted brands, and a seamless shopping experience tailored just for you.</p>
 
             <div className="my-4 md:flex justify-center items-center gap-8 ">
-               
-                <div className="text-center md:mr-20  ">
+                <div className="lg:flex">
+                      <div className="text-center md:mr-20  ">
                     <form className="w-32 space-y-1 dark:text-gray-800 mx-auto" onSubmit={handleFilter}>
                         <label htmlFor="Search" className="hidden">Search</label>
                         <div className="relative mx-auto">
@@ -167,7 +167,9 @@ const Products = () => {
                         </div>
                     </form>
                 </div>
-                <div>
+                </div>
+              
+                <div className="flex flex-col mt-4 gap-3">
                     <Menu>
                         <MenuHandler>
                             <Button className="bg-primary  text-white w-full placeholder:opacity-100 focus:border-t-primary border-t-blue-gray-200">{sort ? `${sort}` : 'Sort'}</Button>
@@ -175,14 +177,14 @@ const Products = () => {
                         <MenuList className="bg-primary bg-opacity-45">
                             <MenuItem value={'price'}
                                 onClick={() => { setSort('price'), refetch() }} className="bg-primary bg-opacity-55 text-white" >Price </MenuItem>
-                            
+
                             <MenuItem value={'date'}
                                 className="bg-primary bg-opacity-55 mt-4 text-white"
                                 onClick={() => { setSort('date'), refetch() }}>Date</MenuItem>
                         </MenuList>
                     </Menu>
                 </div>
-                <div>
+                <div className="mt-3 w-auto">
                     <Menu>
                         <MenuHandler>
                             <Button className="bg-primary  text-white w-full placeholder:opacity-100 focus:border-t-primary border-t-blue-gray-200">{sortOrder ? `${sortOrder}` : 'Order'}</Button>
@@ -197,24 +199,24 @@ const Products = () => {
                         </MenuList>
                     </Menu>
                 </div>
-                <div className="md:flex gap-3 items-center">
-                    <div className="flex flex-col gap-2">
+                <div className="flex gap-3 mt-4 items-center">
+                    <div className="flex md:flex-col gap-2 mb-3 mx-auto items-center">
                         <input
-                        type="number"
-                        placeholder="Min Price"
-                        className="w-12 py-2 pl-4 text-sm rounded-md sm:w-auto focus:outline-none text-black bg-gray-100 dark:text-gray-800 focus:dark:bg-gray-50 focus:dark:border-violet-600" 
-                        value={minPrice}
-                        onChange={(e) => setMinPrice(e.target.value)}
-                    />
-                    <input
-                        type="number"
-                        placeholder="Max Price"
-                        className="w-12 py-2 pl-4 text-sm rounded-md sm:w-auto focus:outline-none text-black bg-gray-100 dark:text-gray-800 focus:dark:bg-gray-50 focus:dark:border-violet-600" 
-                        value={maxPrice}
-                        onChange={(e) => setMaxPrice(e.target.value)}
-                    />
+                            type="number"
+                            placeholder="Min Price"
+                            className="w-24 py-2 pl-4 text-sm rounded-md sm:w-auto focus:outline-none text-black bg-gray-100 dark:text-gray-800 focus:dark:bg-gray-50 focus:dark:border-violet-600"
+                            value={minPrice}
+                            onChange={(e) => setMinPrice(e.target.value)}
+                        />
+                        <input
+                            type="number"
+                            placeholder="Max Price"
+                            className="w-24 py-2 pl-4 text-sm rounded-md sm:w-auto focus:outline-none text-black bg-gray-100 dark:text-gray-800 focus:dark:bg-gray-50 focus:dark:border-violet-600"
+                            value={maxPrice}
+                            onChange={(e) => setMaxPrice(e.target.value)}
+                        />
                     </div>
-                    
+
                     <Button className="bg-primary text-white" onClick={handleMinMax}>Filter</Button>
                 </div>
 
@@ -222,28 +224,28 @@ const Products = () => {
             <div className="mx-auto pt-4 md:pt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
                 {cards.map(product => (
                     <Product key={product.productName} product={product} className='data'>
-                       
+
                     </Product>
                 ))}
             </div>
             <div className="mt-6 mb-4">
-                    <div className="flex justify-center space-x-1 px-2 dark:text-gray-800 pagination">
-                        <button title="previous" type="button" className="w-8 h-8 py-0 px-2 border rounded-md shadow-md dark:bg-gray-50 dark:border-gray-100 bg-primary" onClick={handlePrev}>
-                            <GrFormPrevious className='text-2xl text-white'></GrFormPrevious>
-                        </button>
-                        {
-                            pages.map(page => <button key={page} onClick={() => { setCurrentPage(page + 1), refetch() }} type="button" title={`Page ${page + 1}`}
-                                className={currentPage === page + 1 && 'selected'}
-                            // className='selected'
-                            >{page + 1} </button>)
-                        }
+                <div className="flex justify-center space-x-1 px-2 dark:text-gray-800 pagination">
+                    <button title="previous" type="button" className="w-8 h-8 py-0 px-2 border rounded-md shadow-md dark:bg-gray-50 dark:border-gray-100 bg-primary" onClick={handlePrev}>
+                        <GrFormPrevious className='text-2xl text-white'></GrFormPrevious>
+                    </button>
+                    {
+                        pages.map(page => <button key={page} onClick={() => { setCurrentPage(page + 1), refetch() }} type="button" title={`Page ${page + 1}`}
+                            className={currentPage === page + 1 && 'selected'}
+                        // className='selected'
+                        >{page + 1} </button>)
+                    }
 
-                        <button title="next" type="button" onClick={handleNext} className="px-2 text-center mx-auto w-8 h-8 py-0 border rounded-md shadow-md dark:bg-gray-50 dark:border-gray-100 bg-primary">
-                            <GrFormNext className='text-2xl text-white'></GrFormNext>
-                        </button>
-                    </div>
-
+                    <button title="next" type="button" onClick={handleNext} className="px-2 text-center mx-auto w-8 h-8 py-0 border rounded-md shadow-md dark:bg-gray-50 dark:border-gray-100 bg-primary">
+                        <GrFormNext className='text-2xl text-white'></GrFormNext>
+                    </button>
                 </div>
+
+            </div>
         </div>
     );
 };

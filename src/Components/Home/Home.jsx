@@ -5,7 +5,7 @@ import Products from "./Products/Products";
 
 const Home = () => {
     return (
-        <div className="container max-w-[1280px] mx-auto">
+        <div className="container w-full max-w-[1280px] mx-auto">
             <StickyNavbar />
             <Products />
             <Footer/>
