@@ -1,10 +1,11 @@
 import { useGSAP } from "@gsap/react";
 import axios from "axios";
 import gsap from "gsap";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Product from "./Product";
 import { useQuery } from "@tanstack/react-query";
-
+import { GrFormPrevious } from "react-icons/gr";
+import { GrFormNext } from "react-icons/gr";
 import {
     Menu,
     MenuHandler,
@@ -37,6 +38,8 @@ const Products = () => {
     const [sortOrder, setSortOrder] = useState('');
     const [minPrice, setMinPrice] = useState('');
     const [maxPrice, setMaxPrice] = useState('');
+    const [currentPage, setCurrentPage] = useState(1);
+    const [count, setCount] = useState(10);
     const { data: cards = [], refetch } = useQuery({
         queryKey: ['cards'],
         queryFn: async () => {
@@ -49,12 +52,37 @@ const Products = () => {
                 }
             })
                
-            console.log(res.data);
             return res.data;
         },
         cacheTime: 0, // Disabling cache for 'cards' query
     });
 
+    useEffect(() => {
+        axios.get(`http://localhost:5000/data-count`)
+            .then(data => {
+                setCount(data.data.count)
+            }).catch(error => console.log(error))
+    }, [currentPage])
+    const numbersOfPage = Math.ceil(count /10)
+    //   Fetch participants Data
+   
+    const pages = [...Array(numbersOfPage).keys()]
+
+
+
+
+    const handlePrev = () => {
+        if (currentPage > 1) {
+            setCurrentPage(currentPage - 1)
+            refetch()
+        }
+    }
+    const handleNext = () => {
+        if (currentPage < numbersOfPage) {
+            setCurrentPage(currentPage + 1)
+            refetch()
+        }
+    }
 
 
     const handleFilter = (e) => {
@@ -78,12 +106,7 @@ const Products = () => {
     const handleMinMax = () => {
         refetch()
     }
-    // useEffect(() => {
-    //     axios.get('/data.json')
-    //         .then(response => setData(response.data));
-        
-    // }, [])
-    // console.log(data);
+    
     return (
         <div className="text-center ">
             <h2 id="title" className="text-4xl mx-auto opacity-0 translate-y-2 transition-all text-black pt-20 md:pt-24">LootBox</h2>
@@ -201,6 +224,24 @@ const Products = () => {
                     </Product>
                 ))}
             </div>
+            <div>
+                    <div className="flex justify-center space-x-1 px-2 dark:text-gray-800 pagination">
+                        <button title="previous" type="button" className="w-8 h-8 py-0 px-2 border rounded-md shadow-md dark:bg-gray-50 dark:border-gray-100 bg-primary" onClick={handlePrev}>
+                            <GrFormPrevious className='text-2xl text-white'></GrFormPrevious>
+                        </button>
+                        {
+                            pages.map(page => <button key={page} onClick={() => { setCurrentPage(page + 1), refetch() }} type="button" title={`Page ${page + 1}`}
+                                className={currentPage === page + 1 && 'selected'}
+                            // className='selected'
+                            >{page + 1} </button>)
+                        }
+
+                        <button title="next" type="button" onClick={handleNext} className="px-2 text-center mx-auto w-8 h-8 py-0 border rounded-md shadow-md dark:bg-gray-50 dark:border-gray-100 bg-primary">
+                            <GrFormNext className='text-2xl text-white'></GrFormNext>
+                        </button>
+                    </div>
+
+                </div>
         </div>
     );
 };
