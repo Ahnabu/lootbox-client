@@ -28,21 +28,23 @@ const Products = () => {
             y: 0
             
         })
-        gsap.to('.data', {
-            opacity: 1,
-            stagger: 0.5,
-            duration: 0.8,
-            ease: "elastic.inOut(1, 0.3)"
-        })
+        
     }, [])
     const [filter, setFilter] = useState('')
     const [sort, setSort] = useState('')
     const [sortOrder, setSortOrder] = useState('');
-
+    const [minPrice, setMinPrice] = useState('');
+    const [maxPrice, setMaxPrice] = useState('');
     const { data: cards = [], refetch } = useQuery({
         queryKey: ['cards'],
         queryFn: async () => {
-            const res = await axios.get(`http://localhost:5000/data?filter=${filter}&sort=${sort}&order=${sortOrder}`);
+            const res = await axios.get(`http://localhost:5000/data?filter=${filter}&sort=${sort}&order=${sortOrder}`, {
+                params: {
+                    minPrice: minPrice || undefined,
+                    maxPrice: maxPrice || undefined
+                }
+            })
+               
             console.log(res.data);
             return res.data;
         },
@@ -50,7 +52,6 @@ const Products = () => {
     });
 
 
-    const [isTwo, setIsTwo] = useState(false)
 
     const handleFilter = (e) => {
         e.preventDefault();
@@ -58,7 +59,9 @@ const Products = () => {
         setFilter(filter)
         refetch()
     }
-
+    const handleMinMax = () => {
+        refetch()
+    }
     // useEffect(() => {
     //     axios.get('/data.json')
     //         .then(response => setData(response.data));
@@ -71,12 +74,12 @@ const Products = () => {
             <p id="text" className="text-xl mx-auto opacity-0 translate-y-2 transition-all text-black pt-3 "> Discover a curated collection of top-quality products, all in one place. LootBox brings you the best deals, trusted brands, and a seamless shopping experience tailored just for you.</p>
 
             <div className="my-4 md:flex justify-center gap-8 ">
-                <Button className="text-white font-bold bg-primary hidden lg:block " onClick={() => { setIsTwo(!isTwo) }}>{isTwo ? 'Switch to three column' : 'Switch to two column'}</Button>
+               
                 <div className="text-center md:mr-20  ">
                     <form className="w-32 space-y-1 dark:text-gray-800 mx-auto" onSubmit={handleFilter}>
                         <label htmlFor="Search" className="hidden">Search</label>
                         <div className="relative mx-auto">
-                            <input type="search" name="search" placeholder="Search camp names..." className="w-32 py-2 pl-10 text-sm rounded-md sm:w-auto focus:outline-none text-black bg-gray-100 dark:text-gray-800 focus:dark:bg-gray-50 focus:dark:border-violet-600" />
+                            <input type="search" name="search" placeholder="Search product name..." className="w-32 py-2 pl-10 text-sm rounded-md sm:w-auto focus:outline-none text-black bg-gray-100 dark:text-gray-800 focus:dark:bg-gray-50 focus:dark:border-violet-600" />
                             <span className="absolute inset-y-0 left-0 flex items-center pl-2">
 
                                 <button type="submit" title="search" className="p-1  focus:outline-none focus:ring">
@@ -95,14 +98,12 @@ const Products = () => {
                             <Button className="bg-primary  text-white w-full placeholder:opacity-100 focus:border-t-primary border-t-blue-gray-200">{sort ? `${sort}` : 'Sort'}</Button>
                         </MenuHandler>
                         <MenuList className="bg-primary bg-opacity-45">
-                            <MenuItem value={'participantCount'}
-                                onClick={() => { setSort('participantCount'), refetch() }} className="bg-primary bg-opacity-55 text-white" >Most Registered</MenuItem>
-                            <MenuItem value={'campFees'}
-                                className="bg-primary bg-opacity-55 text-white" onClick={() => { setSort('campFees'), refetch() }}
-                            > Camp Fees</MenuItem>
-                            <MenuItem value={'campName'}
+                            <MenuItem value={'price'}
+                                onClick={() => { setSort('price'), refetch() }} className="bg-primary bg-opacity-55 text-white" >Price </MenuItem>
+                            
+                            <MenuItem value={'date'}
                                 className="bg-primary bg-opacity-55 text-white"
-                                onClick={() => { setSort('campName'), refetch() }}>Camp Name</MenuItem>
+                                onClick={() => { setSort('date'), refetch() }}>Date</MenuItem>
                         </MenuList>
                     </Menu>
                 </div>
@@ -120,6 +121,23 @@ const Products = () => {
 
                         </MenuList>
                     </Menu>
+                </div>
+                <div className="md:flex gap-3 ">
+                    <input
+                        type="number"
+                        placeholder="Min Price"
+                        className="w-12 py-2 pl-4 text-sm rounded-md sm:w-auto focus:outline-none text-black bg-gray-100 dark:text-gray-800 focus:dark:bg-gray-50 focus:dark:border-violet-600" 
+                        value={minPrice}
+                        onChange={(e) => setMinPrice(e.target.value)}
+                    />
+                    <input
+                        type="number"
+                        placeholder="Max Price"
+                        className="w-12 py-2 pl-4 text-sm rounded-md sm:w-auto focus:outline-none text-black bg-gray-100 dark:text-gray-800 focus:dark:bg-gray-50 focus:dark:border-violet-600" 
+                        value={maxPrice}
+                        onChange={(e) => setMaxPrice(e.target.value)}
+                    />
+                    <Button className="bg-primary text-white" onClick={handleMinMax}>Filter</Button>
                 </div>
 
             </div>

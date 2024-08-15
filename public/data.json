@@ -7,7 +7,7 @@
         "category": "Electronics",
         "brandName": "SoundMagic",
         "ratings": 4.5,
-        "createdAt": "2024-08-01T10:00:00Z"
+        "date": "2024-08-01T10:00:00Z"
     },
     {
         "productName": "Smartphone",
@@ -17,7 +17,7 @@
         "category": "Electronics",
         "brandName": "TechPro",
         "ratings": 4.8,
-        "createdAt": "2024-08-02T11:30:00Z"
+        "date": "2024-08-02T11:30:00Z"
     },
     {
         "productName": "Running Shoes",
@@ -27,7 +27,7 @@
         "category": "Fashion",
         "brandName": "FitFeet",
         "ratings": 4.2,
-        "createdAt": "2024-08-03T09:15:00Z"
+        "date": "2024-08-03T09:15:00Z"
     },
     {
         "productName": "Gaming Laptop",
@@ -37,7 +37,7 @@
         "category": "Electronics",
         "brandName": "GameOn",
         "ratings": 4.7,
-        "createdAt": "2024-08-04T14:45:00Z"
+        "date": "2024-08-04T14:45:00Z"
     },
     {
         "productName": "Coffee Maker",
@@ -47,7 +47,7 @@
         "category": "Home Appliances",
         "brandName": "BrewMaster",
         "ratings": 4.3,
-        "createdAt": "2024-08-05T08:00:00Z"
+        "date": "2024-08-05T08:00:00Z"
     },
     {
         "productName": "LED TV",
@@ -57,7 +57,7 @@
         "category": "Electronics",
         "brandName": "VisionMax",
         "ratings": 4.6,
-        "createdAt": "2024-08-06T13:20:00Z"
+        "date": "2024-08-06T13:20:00Z"
     },
     {
         "productName": "Blender",
@@ -67,7 +67,7 @@
         "category": "Home Appliances",
         "brandName": "BlendIt",
         "ratings": 4.0,
-        "createdAt": "2024-08-07T15:10:00Z"
+        "date": "2024-08-07T15:10:00Z"
     },
     {
         "productName": "Yoga Mat",
@@ -77,7 +77,7 @@
         "category": "Fitness",
         "brandName": "ZenFlex",
         "ratings": 4.4,
-        "createdAt": "2024-08-08T12:05:00Z"
+        "date": "2024-08-08T12:05:00Z"
     },
     {
         "productName": "Desk Chair",
@@ -87,7 +87,7 @@
         "category": "Furniture",
         "brandName": "ErgoComfort",
         "ratings": 4.2,
-        "createdAt": "2024-08-09T10:45:00Z"
+        "date": "2024-08-09T10:45:00Z"
     },
     {
         "productName": "Bluetooth Speaker",
@@ -97,7 +97,7 @@
         "category": "Electronics",
         "brandName": "BassBoom",
         "ratings": 4.3,
-        "createdAt": "2024-08-10T09:30:00Z"
+        "date": "2024-08-10T09:30:00Z"
     },
     {
         "productName": "Wristwatch",
@@ -107,7 +107,7 @@
         "category": "Fashion",
         "brandName": "Timeless",
         "ratings": 4.7,
-        "createdAt": "2024-08-11T16:20:00Z"
+        "date": "2024-08-11T16:20:00Z"
     },
     {
         "productName": "Electric Kettle",
@@ -117,7 +117,7 @@
         "category": "Home Appliances",
         "brandName": "QuickBoil",
         "ratings": 4.1,
-        "createdAt": "2024-08-12T08:40:00Z"
+        "date": "2024-08-12T08:40:00Z"
     },
     {
         "productName": "Sunglasses",
@@ -127,7 +127,7 @@
         "category": "Fashion",
         "brandName": "SunGuard",
         "ratings": 4.6,
-        "createdAt": "2024-08-13T11:50:00Z"
+        "date": "2024-08-13T11:50:00Z"
     },
     {
         "productName": "Fitness Tracker",
@@ -137,7 +137,7 @@
         "category": "Fitness",
         "brandName": "TrackPro",
         "ratings": 4.4,
-        "createdAt": "2024-08-14T14:00:00Z"
+        "date": "2024-08-14T14:00:00Z"
     },
     {
         "productName": "Laptop Stand",
@@ -147,7 +147,7 @@
         "category": "Accessories",
         "brandName": "StandPerfect",
         "ratings": 4.5,
-        "createdAt": "2024-08-15T11:00:00Z"
+        "date": "2024-08-15T11:00:00Z"
     },
     {
         "productName": "Wireless Mouse",
@@ -157,7 +157,7 @@
         "category": "Accessories",
         "brandName": "ClickEase",
         "ratings": 4.3,
-        "createdAt": "2024-08-16T09:00:00Z"
+        "date": "2024-08-16T09:00:00Z"
     },
     {
         "productName": "Smart Watch",
@@ -167,7 +167,7 @@
         "category": "Electronics",
         "brandName": "WristTech",
         "ratings": 4.7,
-        "createdAt": "2024-08-17T12:00:00Z"
+        "date": "2024-08-17T12:00:00Z"
     },
     {
         "productName": "Noise Cancelling Headphones",
@@ -177,7 +177,7 @@
         "category": "Electronics",
         "brandName": "QuietSound",
         "ratings": 4.8,
-        "createdAt": "2024-08-18T14:00:00Z"
+        "date": "2024-08-18T14:00:00Z"
     },
     {
         "productName": "Portable Charger",
@@ -187,7 +187,7 @@
         "category": "Accessories",
         "brandName": "PowerBank",
         "ratings": 4.6,
-        "createdAt": "2024-08-19T16:00:00Z"
+        "date": "2024-08-19T16:00:00Z"
     },
     {
         "productName": "Smart Thermostat",
@@ -197,7 +197,7 @@
         "category": "Home Appliances",
         "brandName": "EcoTemp",
         "ratings": 4.7,
-        "createdAt": "2024-08-20T18:00:00Z"
+        "date": "2024-08-20T18:00:00Z"
     },
     {
         "productName": "Electric Toothbrush",
@@ -207,7 +207,7 @@
         "category": "Personal Care",
         "brandName": "CleanSmile",
         "ratings": 4.5,
-        "createdAt": "2024-08-21T10:00:00Z"
+        "date": "2024-08-21T10:00:00Z"
     },
     {
         "productName": "Air Fryer",
@@ -217,7 +217,7 @@
         "category": "Home Appliances",
         "brandName": "CrispyCook",
         "ratings": 4.6,
-        "createdAt": "2024-08-22T12:00:00Z"
+        "date": "2024-08-22T12:00:00Z"
     },
     {
         "productName": "Electric Shaver",
@@ -227,7 +227,7 @@
         "category": "Personal Care",
         "brandName": "SmoothShave",
         "ratings": 4.4,
-        "createdAt": "2024-08-23T14:00:00Z"
+        "date": "2024-08-23T14:00:00Z"
     },
     {
         "productName": "Espresso Machine",
@@ -237,7 +237,7 @@
         "category": "Home Appliances",
         "brandName": "BrewMaster",
         "ratings": 4.8,
-        "createdAt": "2024-08-24T16:00:00Z"
+        "date": "2024-08-24T16:00:00Z"
     },
     {
         "productName": "Vacuum Cleaner",
@@ -247,7 +247,7 @@
         "category": "Home Appliances",
         "brandName": "DustBuster",
         "ratings": 4.7,
-        "createdAt": "2024-08-25T18:00:00Z"
+        "date": "2024-08-25T18:00:00Z"
     },
     {
         "productName": "Robot Vacuum",
@@ -257,7 +257,7 @@
         "category": "Home Appliances",
         "brandName": "RoboClean",
         "ratings": 4.6,
-        "createdAt": "2024-08-26T10:00:00Z"
+        "date": "2024-08-26T10:00:00Z"
     },
     {
         "productName": "Wireless Charger",
@@ -267,7 +267,7 @@
         "category": "Accessories",
         "brandName": "ChargeFast",
         "ratings": 4.5,
-        "createdAt": "2024-08-27T12:00:00Z"
+        "date": "2024-08-27T12:00:00Z"
     },
     {
         "productName": "4K Action Camera",
@@ -277,7 +277,7 @@
         "category": "Electronics",
         "brandName": "AdventureCam",
         "ratings": 4.6,
-        "createdAt": "2024-08-28T14:00:00Z"
+        "date": "2024-08-28T14:00:00Z"
     },
     {
         "productName": "Waterproof Speaker",
@@ -287,7 +287,7 @@
         "category": "Electronics",
         "brandName": "AquaSound",
         "ratings": 4.5,
-        "createdAt": "2024-08-29T16:00:00Z"
+        "date": "2024-08-29T16:00:00Z"
     },
     {
         "productName": "Portable Projector",
@@ -297,7 +297,7 @@
         "category": "Electronics",
         "brandName": "ProjectorMax",
         "ratings": 4.7,
-        "createdAt": "2024-08-30T18:00:00Z"
+        "date": "2024-08-30T18:00:00Z"
     },
     {
         "productName": "Smart Lock",
@@ -307,7 +307,7 @@
         "category": "Home Security",
         "brandName": "SecureEntry",
         "ratings": 4.6,
-        "createdAt": "2024-08-31T10:00:00Z"
+        "date": "2024-08-31T10:00:00Z"
     },
     {
         "productName": "Gaming Keyboard",
@@ -317,7 +317,7 @@
         "category": "Accessories",
         "brandName": "KeyPro",
         "ratings": 4.7,
-        "createdAt": "2024-09-01T12:00:00Z"
+        "date": "2024-09-01T12:00:00Z"
     },
     {
         "productName": "Smart Light Bulbs",
@@ -327,7 +327,7 @@
         "category": "Home Appliances",
         "brandName": "BrightHome",
         "ratings": 4.6,
-        "createdAt": "2024-09-02T14:00:00Z"
+        "date": "2024-09-02T14:00:00Z"
     },
     {
         "productName": "Digital Camera",
@@ -337,7 +337,7 @@
         "category": "Electronics",
         "brandName": "SnapShot",
         "ratings": 4.8,
-        "createdAt": "2024-09-03T16:00:00Z"
+        "date": "2024-09-03T16:00:00Z"
     },
     {
         "productName": "Wireless Earbuds Pro",
@@ -347,7 +347,7 @@
         "category": "Electronics",
         "brandName": "SoundMagic",
         "ratings": 4.9,
-        "createdAt": "2024-09-04T18:00:00Z"
+        "date": "2024-09-04T18:00:00Z"
     },
     {
         "productName": "Gaming Headset",
@@ -357,7 +357,7 @@
         "category": "Electronics",
         "brandName": "SoundWave",
         "ratings": 4.7,
-        "createdAt": "2024-09-05T10:00:00Z"
+        "date": "2024-09-05T10:00:00Z"
     },
     {
         "productName": "Electric Scooter",
@@ -367,7 +367,7 @@
         "category": "Transport",
         "brandName": "EcoRide",
         "ratings": 4.6,
-        "createdAt": "2024-09-06T12:00:00Z"
+        "date": "2024-09-06T12:00:00Z"
     },
     {
         "productName": "Smart Home Hub",
@@ -377,7 +377,7 @@
         "category": "Home Appliances",
         "brandName": "HomeConnect",
         "ratings": 4.5,
-        "createdAt": "2024-09-07T14:00:00Z"
+        "date": "2024-09-07T14:00:00Z"
     },
     {
         "productName": "Electric Bike",
@@ -387,7 +387,7 @@
         "category": "Transport",
         "brandName": "EcoWheel",
         "ratings": 4.8,
-        "createdAt": "2024-09-08T16:00:00Z"
+        "date": "2024-09-08T16:00:00Z"
     },
     {
         "productName": "Home Security Camera",
@@ -397,7 +397,7 @@
         "category": "Home Security",
         "brandName": "SecureView",
         "ratings": 4.7,
-        "createdAt": "2024-09-09T18:00:00Z"
+        "date": "2024-09-09T18:00:00Z"
     },
     {
         "productName": "Standing Desk",
@@ -407,7 +407,7 @@
         "category": "Furniture",
         "brandName": "WorkComfort",
         "ratings": 4.6,
-        "createdAt": "2024-09-10T10:00:00Z"
+        "date": "2024-09-10T10:00:00Z"
     },
     {
         "productName": "Smart Mirror",
@@ -417,7 +417,7 @@
         "category": "Home Appliances",
         "brandName": "ReflectiveTech",
         "ratings": 4.5,
-        "createdAt": "2024-09-11T12:00:00Z"
+        "date": "2024-09-11T12:00:00Z"
     },
     {
         "productName": "Drone with Camera",
@@ -427,7 +427,7 @@
         "category": "Electronics",
         "brandName": "SkyView",
         "ratings": 4.7,
-        "createdAt": "2024-09-12T14:00:00Z"
+        "date": "2024-09-12T14:00:00Z"
     },
     {
         "productName": "Portable Air Conditioner",
@@ -437,7 +437,7 @@
         "category": "Home Appliances",
         "brandName": "CoolBreeze",
         "ratings": 4.4,
-        "createdAt": "2024-09-13T16:00:00Z"
+        "date": "2024-09-13T16:00:00Z"
     },
     {
         "productName": "VR Headset",
@@ -447,6 +447,6 @@
         "category": "Electronics",
         "brandName": "VisionVR",
         "ratings": 4.8,
-        "createdAt": "2024-09-14T18:00:00Z"
+        "date": "2024-09-14T18:00:00Z"
     }
 ]
