@@ -6,6 +6,7 @@ import Product from "./Product";
 import { useQuery } from "@tanstack/react-query";
 import { GrFormPrevious } from "react-icons/gr";
 import { GrFormNext } from "react-icons/gr";
+import './styles.css'
 import {
     Menu,
     MenuHandler,
@@ -224,7 +225,7 @@ const Products = () => {
                     </Product>
                 ))}
             </div>
-            <div>
+            <div className="mt-6 mb-4">
                     <div className="flex justify-center space-x-1 px-2 dark:text-gray-800 pagination">
                         <button title="previous" type="button" className="w-8 h-8 py-0 px-2 border rounded-md shadow-md dark:bg-gray-50 dark:border-gray-100 bg-primary" onClick={handlePrev}>
                             <GrFormPrevious className='text-2xl text-white'></GrFormPrevious>
