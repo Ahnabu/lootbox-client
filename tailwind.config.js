@@ -4,7 +4,9 @@ export default withMT({
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      
+      colors: {
+        primary:"#98C1D9"
+      }
     },
   },
   plugins: [],
