@@ -44,7 +44,7 @@ const Products = () => {
     const { data: cards = [], refetch } = useQuery({
         queryKey: ['cards'],
         queryFn: async () => {
-            const res = await axios.get(`http://localhost:5000/data`, {
+            const res = await axios.get(`https://lootbox-server.vercel.app/data`, {
                 params: {
                     filter: filter,
                     sort: sort,
@@ -63,7 +63,7 @@ const Products = () => {
     });
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/data-count`, {
+        axios.get(`https://lootbox-server.vercel.app/data-count`, {
             params: {
                 filter: filter,
                 sort: sort,
@@ -84,7 +84,7 @@ const Products = () => {
 
     const pages = [...Array(numbersOfPage).keys()]
 
-    console.log(count);
+
 
 
     const handlePrev = () => {
@@ -205,9 +205,9 @@ const Products = () => {
                         </MenuHandler>
                         <MenuList className="bg-primary bg-opacity-45">
                             <MenuItem value={'asc'}
-                                onClick={() => { setSortOrder('asc') }} className="bg-primary bg-opacity-55 text-white" >Ascending</MenuItem>
+                                onClick={() => { setSortOrder('asc'),refetch() }} className="bg-primary bg-opacity-55 text-white mb-3" >Ascending</MenuItem>
                             <MenuItem value={'des'}
-                                className="bg-primary bg-opacity-55 text-white" onClick={() => { setSortOrder('desc') }}
+                                className="bg-primary bg-opacity-55 text-white" onClick={() => { setSortOrder('desc'),refetch() }}
                             > Descending</MenuItem>
 
                         </MenuList>
