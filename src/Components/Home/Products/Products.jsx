@@ -40,12 +40,15 @@ const Products = () => {
     const [minPrice, setMinPrice] = useState('');
     const [maxPrice, setMaxPrice] = useState('');
     const [currentPage, setCurrentPage] = useState(1);
-    const [count, setCount] = useState(10);
+    const [count, setCount] = useState(9);
     const { data: cards = [], refetch } = useQuery({
         queryKey: ['cards'],
         queryFn: async () => {
-            const res = await axios.get(`https://lootbox-server.vercel.app/data?filter=${filter}&sort=${sort}&order=${sortOrder}`, {
+            const res = await axios.get(`http://localhost:5000/data`, {
                 params: {
+                    filter: filter,
+                    sort: sort,
+                    order:sortOrder,
                     minPrice: minPrice || undefined,
                     maxPrice: maxPrice || undefined,
                     brand: brand,
@@ -60,17 +63,28 @@ const Products = () => {
     });
 
     useEffect(() => {
-        axios.get(`https://lootbox-server.vercel.app/data-count`)
+        axios.get(`http://localhost:5000/data-count`, {
+            params: {
+                filter: filter,
+                sort: sort,
+                order: sortOrder,
+                minPrice: minPrice || undefined,
+                maxPrice: maxPrice || undefined,
+                brand: brand,
+                category: category,
+            }
+        })
             .then(data => {
                 setCount(data.data.count)
+                
             }).catch(error => console.log(error))
-    }, [currentPage])
+    }, [brand, category, currentPage, filter, maxPrice, minPrice, sort, sortOrder])
     const numbersOfPage = Math.ceil(count / 9)
     //   Fetch participants Data
 
     const pages = [...Array(numbersOfPage).keys()]
 
-
+    console.log(count);
 
 
     const handlePrev = () => {
@@ -108,7 +122,7 @@ const Products = () => {
     const handleMinMax = () => {
         refetch()
     }
-
+    console.log(cards);
     return (
         <div className="text-center ">
             <h2 id="title" className="text-4xl mx-auto opacity-0 translate-y-2 transition-all text-black pt-20 md:pt-24">LootBox</h2>
